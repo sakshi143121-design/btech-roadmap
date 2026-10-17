@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes - B.Tech Roadmap</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="index.html"><span class="logo">&lt;/&gt;</span>B.Tech Roadmap</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="what-is-btech.html">What is B.Tech?</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="notes.html">Notes</a>
+      <a href="videos.html">Videos</a>
+      <div class="dropdown">
+        <button class="drop-btn" aria-expanded="false">More</button>
+        <div class="drop-menu">
+          <a href="projects.html">Projects</a>
+          <a href="internships.html">Internships</a>
+          <a href="tools.html">Tools</a>
+          <a href="interview.html">Interview Prep</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="roadmap.html#year1">Start Year 1</a>
+    </div>
+  </nav>
+
+  <header class="hero" data-prop="notebook" data-message="Tick one topic today. Small wins add up!">
+    <h1>Subject notes and topic tracker</h1>
+    <p>Every important subject, explained in simple words, with a topic checklist so you always know what is finished and what is left.</p>
+  </header>
+
+  <section class="container">
+    <div class="progress-box">
+      <p id="progress-text">Loading your progress...</p>
+      <div class="progress"><div id="progress-fill"></div></div>
+    </div>
+
+    <div class="tools">
+      <input class="search" id="search" type="search" placeholder="Search a subject or topic, like loops or SQL" aria-label="Search subjects">
+    </div>
+
+    <div id="notes-list"></div>
+    <noscript><p>Please turn on JavaScript to see the notes.</p></noscript>
+
+    <div class="tip">
+      <p><b>Your ticks are saved</b> in this browser, so they are still there when you come back. Subjects and names change between colleges, so use these notes together with your own syllabus.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 B.Tech Roadmap. Made by a student, for students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="library.js"></script>
+</body>
+</html>

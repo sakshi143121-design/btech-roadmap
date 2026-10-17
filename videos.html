@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos - B.Tech Roadmap</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="index.html"><span class="logo">&lt;/&gt;</span>B.Tech Roadmap</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="what-is-btech.html">What is B.Tech?</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="notes.html">Notes</a>
+      <a href="videos.html">Videos</a>
+      <div class="dropdown">
+        <button class="drop-btn" aria-expanded="false">More</button>
+        <div class="drop-menu">
+          <a href="projects.html">Projects</a>
+          <a href="internships.html">Internships</a>
+          <a href="tools.html">Tools</a>
+          <a href="interview.html">Interview Prep</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="roadmap.html#year1">Start Year 1</a>
+    </div>
+  </nav>
+
+  <header class="hero" data-prop="play" data-message="Watch a little, then practice a lot.">
+    <h1>Video library</h1>
+    <p>Free courses and video searches for every subject, in English and Hindi. Pick a subject, or search for a word.</p>
+  </header>
+
+  <section class="container">
+    <div class="chips">
+      <button class="chip active" data-subject="All">All</button>
+      <button class="chip" data-subject="Programming">Programming</button>
+      <button class="chip" data-subject="DSA">DSA</button>
+      <button class="chip" data-subject="Web">Web</button>
+      <button class="chip" data-subject="Core subjects">Core subjects</button>
+      <button class="chip" data-subject="Career">Career</button>
+    </div>
+
+    <div class="tools">
+      <input class="search" id="search" type="search" placeholder="Search, like python or hindi" aria-label="Search videos">
+    </div>
+
+    <div class="video-grid" id="video-list"></div>
+    <noscript><p>Please turn on JavaScript to see the videos.</p></noscript>
+
+    <div class="tip">
+      <p><b>How to read the labels:</b> "YouTube video" opens one video directly. "Course page" opens a page about a course. "YouTube search" opens YouTube with the right search, so you can pick the video you like best. Please watch a minute of a video before you trust it.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 B.Tech Roadmap. Made by a student, for students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="library.js"></script>
+</body>
+</html>

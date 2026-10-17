@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Prep - B.Tech Roadmap</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a class="brand" href="index.html"><span class="logo">&lt;/&gt;</span>B.Tech Roadmap</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="what-is-btech.html">What is B.Tech?</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="notes.html">Notes</a>
+      <a href="videos.html">Videos</a>
+      <div class="dropdown">
+        <button class="drop-btn" aria-expanded="false">More</button>
+        <div class="drop-menu">
+          <a href="projects.html">Projects</a>
+          <a href="internships.html">Internships</a>
+          <a href="tools.html">Tools</a>
+          <a href="interview.html">Interview Prep</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="roadmap.html#year1">Start Year 1</a>
+    </div>
+  </nav>
+
+  <header class="hero" data-prop="question" data-message="Practice out loud. Every answer you rehearse makes you stronger.">
+    <h1>Interview prep, step by step</h1>
+    <p>How interviews work, a 4-week plan, common questions with simple answers, and tips for the big day.</p>
+  </header>
+
+  <section class="container">
+    <h2>How an interview usually works</h2>
+    <ul>
+      <li><b>Online test:</b> aptitude, reasoning and coding questions.</li>
+      <li><b>Technical round:</b> your projects, DSA, and core subjects like OOP and DBMS.</li>
+      <li><b>HR round:</b> about you, your goals, and whether you fit the team.</li>
+    </ul>
+    <p>Every company is different, and some skip a step, but this order is the most common.</p>
+
+    <h2 style="margin-top: 36px;">A 4-week plan</h2>
+    <ol>
+      <li><b>Week 1:</b> revise one language and the basics. Solve 10 easy problems.</li>
+      <li><b>Week 2:</b> arrays, strings and hashing. Solve 10 more problems and revise OOP.</li>
+      <li><b>Week 3:</b> linked lists, stacks, queues and trees. Practice SQL queries.</li>
+      <li><b>Week 4:</b> OS and networks, 2 mock interviews, and polish your resume and projects.</li>
+    </ol>
+    <a class="watch" href="https://www.youtube.com/watch?v=Z_c4byLrNBU" target="_blank" rel="noopener">DSA patterns video (1 hour)</a>
+    <a class="watch" href="https://www.youtube.com/results?search_query=mock+interview+software+engineer+fresher" target="_blank" rel="noopener">Mock interview videos</a>
+  </section>
+
+  <section class="container">
+    <h2>Common questions, with simple answers</h2>
+    <p>Tap a group to open it. Learn the idea, then say the answer in your own words.</p>
+
+    <details>
+      <summary>Programming and DSA</summary>
+      <div class="inside"><ul>
+        <li><b>Array or linked list?</b> An array has a fixed size and fast access by position. A linked list grows easily and is fast to insert into, but slower to search.</li>
+        <li><b>Stack or queue?</b> A stack is last in, first out. A queue is first in, first out.</li>
+        <li><b>What is time complexity?</b> It shows how the running time grows as the input grows. We write it with Big O, like O(n).</li>
+        <li><b>What is recursion?</b> A function that calls itself on a smaller problem, with a base case that tells it when to stop.</li>
+        <li><b>What is binary search?</b> It finds an item in a sorted list by cutting the search area in half each time. It takes O(log n).</li>
+        <li><b>What is a hash map?</b> It stores key and value pairs, and finds a key very fast, on average in O(1).</li>
+      </ul></div>
+    </details>
+
+    <details>
+      <summary>OOP</summary>
+      <div class="inside"><ul>
+        <li><b>What is OOP?</b> Organizing code into objects that hold data and actions. Its four pillars are encapsulation, inheritance, polymorphism and abstraction.</li>
+        <li><b>Class or object?</b> A class is a blueprint. An object is a real item made from that blueprint.</li>
+        <li><b>What is inheritance?</b> One class gets the features of another class, so you can reuse code.</li>
+        <li><b>What is polymorphism?</b> The same name behaves in different ways, like overloading and overriding.</li>
+        <li><b>What is encapsulation?</b> Keeping data and the code that uses it together, and hiding the details with private members.</li>
+      </ul></div>
+    </details>
+
+    <details>
+      <summary>DBMS and SQL</summary>
+      <div class="inside"><ul>
+        <li><b>What is a primary key?</b> A column that identifies each row in a table in a unique way.</li>
+        <li><b>What is a JOIN?</b> It combines rows from two tables using a common column.</li>
+        <li><b>What is normalization?</b> Organizing tables to reduce repeated data.</li>
+        <li><b>What is ACID?</b> Atomicity, Consistency, Isolation and Durability. These are the rules that keep a transaction safe.</li>
+        <li><b>DELETE or TRUNCATE?</b> DELETE removes the rows you choose. TRUNCATE removes all rows at once.</li>
+      </ul></div>
+    </details>
+
+    <details>
+      <summary>OS and Networks</summary>
+      <div class="inside"><ul>
+        <li><b>Process or thread?</b> A process is a running program with its own memory. A thread is a smaller part inside a process, and threads share its memory.</li>
+        <li><b>What is a deadlock?</b> Two or more processes wait for each other, and none of them can move forward.</li>
+        <li><b>TCP or UDP?</b> TCP is reliable and keeps the order, but it is slower. UDP is fast, but it gives no guarantee.</li>
+        <li><b>HTTP or HTTPS?</b> HTTPS is HTTP with encryption, so your data is protected.</li>
+        <li><b>What happens when you type a website address?</b> The browser finds the server's address using DNS, connects to it, sends a request, gets a reply, and shows the page.</li>
+      </ul></div>
+    </details>
+
+    <details>
+      <summary>HR questions</summary>
+      <div class="inside"><ul>
+        <li><b>Tell me about yourself.</b> Use this pattern: "I am [name], a [year] B.Tech CSE student. I enjoy [area]. I built [project]. I am looking for [role] to learn and grow."</li>
+        <li><b>Why should we hire you?</b> Match one skill to the role, and give a project as proof.</li>
+        <li><b>What is your weakness?</b> Be honest, and explain what you are doing to improve it.</li>
+        <li><b>Where do you see yourself in 5 years?</b> Say you want to keep learning and grow into a stronger developer.</li>
+        <li><b>Do you have any questions for us?</b> Always ask one, like about the team, the work, or how you will learn.</li>
+      </ul></div>
+    </details>
+  </section>
+
+  <section class="container">
+    <h2>On the interview day</h2>
+    <ul>
+      <li><b>Think aloud.</b> Interviewers want to hear how you think, not only the final answer.</li>
+      <li><b>Ask questions first.</b> Make sure you understand the problem before you code.</li>
+      <li><b>Start simple.</b> Give the easy solution first, then improve it.</li>
+      <li><b>Test with an example.</b> Run your answer on a small input.</li>
+      <li><b>Be honest.</b> If you do not know something, say so, and say how you would find out.</li>
+    </ul>
+    <div class="tip">
+      <p><b>Mistakes to avoid:</b> remembering answers word for word, coding in silence, and not being able to explain your own project.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 B.Tech Roadmap. Made by a student, for students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

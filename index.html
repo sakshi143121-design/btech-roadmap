@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B.Tech Roadmap: your complete guide, year by year</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- If the intro was already seen in this visit, skip it -->
+  <script>try { if (sessionStorage.getItem("introSeen") === "yes") { document.documentElement.className += " no-intro"; } } catch (e) {}</script>
+</head>
+<body>
+
+  <!-- INTRO ANIMATION (plays first, then slides up) -->
+  <div id="intro">
+    <div>
+      <p class="intro-line">&gt; hello, future engineer</p>
+      <h1 class="intro-title">B.Tech <span>Roadmap</span></h1>
+      <p class="intro-sub">Your complete guide, year by year</p>
+      <div class="intro-bar"><div></div></div>
+    </div>
+    <button class="intro-skip" id="skip">Skip</button>
+  </div>
+
+  <nav>
+    <a class="brand" href="index.html"><span class="logo">&lt;/&gt;</span>B.Tech Roadmap</a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="what-is-btech.html">What is B.Tech?</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="notes.html">Notes</a>
+      <a href="videos.html">Videos</a>
+      <div class="dropdown">
+        <button class="drop-btn" aria-expanded="false">More</button>
+        <div class="drop-menu">
+          <a href="projects.html">Projects</a>
+          <a href="internships.html">Internships</a>
+          <a href="tools.html">Tools</a>
+          <a href="interview.html">Interview Prep</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <a class="nav-cta" href="roadmap.html#year1">Start Year 1</a>
+    </div>
+  </nav>
+
+  <!-- TOP SECTION: a little about the website -->
+  <header class="hero-home">
+    <div class="symbols" aria-hidden="true">
+      <span style="left:6%; animation-delay:0s">{ }</span>
+      <span style="left:20%; animation-delay:3s">&lt; &gt;</span>
+      <span style="left:36%; animation-delay:6s">;</span>
+      <span style="left:52%; animation-delay:1.5s">( )</span>
+      <span style="left:68%; animation-delay:4.5s">[ ]</span>
+      <span style="left:82%; animation-delay:8s">01</span>
+      <span style="left:93%; animation-delay:2s">//</span>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <h1 class="rise" style="--d:0s">Your B.Tech, <span class="mark">year by year</span></h1>
+        <p class="typing rise" style="--d:.15s">Learn <span class="typed" id="typed">C++</span></p>
+        <p class="rise" style="--d:.3s">A free guide made by a student, for students. Simple notes, videos, projects and internship tips for all 4 years.</p>
+        <div class="rise" style="--d:.45s">
+          <a class="button" href="roadmap.html#year1">Start with Year 1</a>
+          <a class="button ghost" href="what-is-btech.html">New to B.Tech?</a>
+        </div>
+      </div>
+
+      <!-- Picture: a laptop with code that keeps typing -->
+      <div class="visual rise" style="--d:.3s" aria-hidden="true">
+        <svg viewBox="0 0 360 250">
+          <rect x="50" y="14" width="260" height="162" rx="12" fill="#14213d"/>
+          <rect x="62" y="26" width="236" height="138" rx="5" fill="#0e1424"/>
+          <circle cx="76" cy="38" r="4" fill="#ff5f56"/><circle cx="90" cy="38" r="4" fill="#ffbd2e"/><circle cx="104" cy="38" r="4" fill="#27c93f"/>
+          <rect class="ln" x="76" y="58" width="120" height="8" rx="4" fill="#ffc933" style="animation-delay:0s"/>
+          <rect class="ln" x="92" y="76" width="150" height="8" rx="4" fill="#8fb0ff" style="animation-delay:.4s"/>
+          <rect class="ln" x="92" y="94" width="90" height="8" rx="4" fill="#8fe3b0" style="animation-delay:.8s"/>
+          <rect class="ln" x="92" y="112" width="130" height="8" rx="4" fill="#8fb0ff" style="animation-delay:1.2s"/>
+          <rect class="ln" x="76" y="130" width="70" height="8" rx="4" fill="#ffc933" style="animation-delay:1.6s"/>
+          <rect x="18" y="176" width="324" height="14" rx="7" fill="#14213d"/>
+          <rect x="140" y="176" width="80" height="6" rx="3" fill="#2a3a63"/>
+        </svg>
+        <span class="badge-float" style="top:4%; left:-2%">C++</span>
+        <span class="badge-float" style="top:30%; right:-4%; animation-delay:1s">Python</span>
+        <span class="badge-float" style="bottom:16%; left:2%; animation-delay:2s">DSA</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- FLOW CHART: the whole journey in one picture -->
+  <section class="container">
+    <h2 class="reveal">Your journey at a glance</h2>
+    <p class="reveal">Tap any step to open its roadmap.</p>
+
+    <div class="flow">
+      <a class="node reveal" href="roadmap.html#year1" style="--d:0s">
+        <span class="num">1</span><strong>Learn the basics</strong>
+        <small>One language, problem solving, HTML and CSS</small>
+      </a>
+      <span class="arrow"></span>
+      <a class="node reveal" href="roadmap.html#year2" style="--d:.15s">
+        <span class="num">2</span><strong>Build your core</strong>
+        <small>DSA, web development, first projects</small>
+        <em class="tag">First internship can start here</em>
+      </a>
+      <span class="arrow"></span>
+      <a class="node reveal" href="roadmap.html#year3" style="--d:.3s">
+        <span class="num">3</span><strong>Choose a path</strong>
+        <small>Go deep in one area and build a big project</small>
+      </a>
+      <span class="arrow"></span>
+      <a class="node reveal" href="roadmap.html#year4" style="--d:.45s">
+        <span class="num">4</span><strong>Get job-ready</strong>
+        <small>Placements, final project, your next step</small>
+      </a>
+    </div>
+
+    <div class="branches reveal">
+      <p><b>At Year 3, you pick one path:</b></p>
+      <div>
+        <span>Web development</span><span>AI and ML</span><span>App development</span><span>Cybersecurity</span><span>Cloud</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section class="container">
+    <h2 class="reveal">What is inside</h2>
+    <div class="links">
+      <a class="reveal" href="what-is-btech.html"><strong>What is B.Tech?</strong>The course explained in simple words.</a>
+      <a class="reveal" href="roadmap.html"><strong>Roadmap</strong>What to learn in each year, and how.</a>
+      <a class="reveal" href="notes.html"><strong>Notes</strong>Every subject, with a topic tracker.</a>
+      <a class="reveal" href="videos.html"><strong>Videos</strong>Free courses in English and Hindi.</a>
+      <a class="reveal" href="projects.html"><strong>Projects</strong>Ideas for every year.</a>
+      <a class="reveal" href="internships.html"><strong>Internships</strong>How to find one and prepare.</a>
+      <a class="reveal" href="tools.html"><strong>Tools</strong>Free tools for coding and practice.</a>
+      <a class="reveal" href="interview.html"><strong>Interview Prep</strong>Questions, plans and tips.</a>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="reveal">Meet the creator</h2>
+    <div class="creator reveal">
+      <div class="avatar" aria-hidden="true">S</div>
+      <div>
+        <p class="quote">Writing code, solving problems, building ideas.</p>
+        <p>Hi, I am Sakshi, a B.Tech CSE student and a software developer in the making. I built this guide so that every student has one simple place to start.</p>
+        <a class="button" href="about.html">Read my story</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 B.Tech Roadmap. Made by a student, for students.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
